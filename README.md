@@ -6,7 +6,7 @@
 Study project from [Rocketseat's](https://rocketseat.com.br/) "Semana OmniStack #8" :books:  
 
 <p align="center">
-  <img width="1910" height="200" src="https://66.media.tumblr.com/e1aea95b23681e4a2b91ded03515ed06/4ece929c334a4f60-29/s540x810/ce7835fd0c706e1342124bbac077bf13cac751eb.png">
+  <img width="1900" height="180" src="https://66.media.tumblr.com/e1aea95b23681e4a2b91ded03515ed06/4ece929c334a4f60-29/s540x810/ce7835fd0c706e1342124bbac077bf13cac751eb.png">
 </p>
 
 # Tools
