@@ -25,7 +25,7 @@ Tech I used to make this :computer::
 - Cors
 
 # TODO:
-- Mobie app with React Native
+- Mobile app with React Native
 - Deploy
 
 # Learning
