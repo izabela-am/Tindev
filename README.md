@@ -7,9 +7,9 @@
 
 # Tools
 Tech I used to make this :computer::
-- Node.js, Express for the back-end
+- Node.js (+ Express) for the back-end
 - React for the front-end
-- MongoDB Atlas, Mongoose as the database
+- MongoDB Atlas (+ Mongoose) as the database
 - Socket.io for realtime matching between users
 - npm for package management
 - Insomnia for testing the back-end
