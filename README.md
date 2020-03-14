@@ -1,9 +1,9 @@
 <p align="center">
-  <img width="291" height="102" src="https://66.media.tumblr.com/2e192870164dc429ba58cdc9404ae91d/4ece929c334a4f60-fe/s540x810/296eb78af26786b80517b9827e2ca7899b7ad470.png">
+  <img width="97" height="34" src="https://66.media.tumblr.com/9de44e026f29cdcd35dfe47bdb897de4/c92047dda5e6f1a9-7d/s540x810/10bba75f99e4c4ba5a1c833a842ce16ffb8792da.png"> 
 </p>
 
 # Tindev
-Study project from [Rocketseat's](https://rocketseat.com.br/) "Semana OmniStack #8" :books:  
+Study project from [Rocketseat's](https://rocketseat.com.br/) "Semana OmniStack #8" :books: 
 
 <p align="center">
   <img width="1900" height="180" src="https://66.media.tumblr.com/e1aea95b23681e4a2b91ded03515ed06/4ece929c334a4f60-29/s540x810/ce7835fd0c706e1342124bbac077bf13cac751eb.png">
@@ -13,7 +13,6 @@ Study project from [Rocketseat's](https://rocketseat.com.br/) "Semana OmniStack 
 Tech I used to make this :computer::
 - Node.js
 - React
-- React Native
 - MongoDB Atlas
 - Socket.io
 - npm
@@ -23,10 +22,6 @@ Tech I used to make this :computer::
 - Github API
 - Insomnia
 - Cors
-
-# TODO:
-- Mobile app with React Native
-- Deploy
 
 # Learning
 This was, by far, the project that has taught me the most about programming. Making a fullstack application was an amazing experience
