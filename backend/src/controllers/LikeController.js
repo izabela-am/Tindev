@@ -2,25 +2,37 @@ const Dev = require("../models/Dev")
 
 module.exports = {
     async store(req, res) {
-        const {devId} = req.params
-        const {user} = req.headers
-
-        const loggedDev = await Dev.findById(user)
-        const targetDev = await Dev.findById(devId)
-
-        // if targeted dev does not exist returns error mssg
-        if(!targetDev) {
-            return res.status(400).json({error: "This developer does not exist!"})
+      console.log(req.io, req.connectedUsers)
+  
+      const { user } = req.headers
+      const { devId } = req.params
+  
+      const loggedDev = await Dev.findById(user)
+      let targetDev = null
+  
+      try {
+        targetDev = await Dev.findById(devId)
+      } catch (error) {
+        return res.status(400).json({ error: 'Dev does not exist' })
+      }
+  
+      if (targetDev.likes.includes(loggedDev._id)) {
+        const loggedSocket = req.connectedUsers[user]
+        const targetSocket = req.connectedUsers[devId]
+  
+        if (loggedSocket) {
+          req.io.to(loggedSocket).emit('match', targetDev)
         }
-        // checks if 2 devs are a match
-        if(targetDev.likes.includes(loggedDev._id)) {
-            console.log("Match!")
+  
+        if (targetSocket) {
+          req.io.to(targetSocket).emit('match', loggedDev)
         }
-
-        // tells db who the logged dev has given 'likes' to
-        loggedDev.likes.push(targetDev._id)
-        await loggedDev.save()
-
-        return res.json(loggedDev)
+      }
+  
+      loggedDev.likes.push(targetDev._id)
+  
+      await loggedDev.save()
+  
+      return res.json(loggedDev)
     }
-}
+  }
