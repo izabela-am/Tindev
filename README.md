@@ -5,11 +5,12 @@
 
 # Tools
 Tech I used to make this :computer::
-- Node.js (+ Express) for the back-end
-- React for the front-end
-- MongoDB Atlas (+ Mongoose) as the database
-- Socket.io for realtime matching between users
-- npm for package management
-- Insomnia for testing the back-end
-- Cors
-- Github API
+- Node.js (+ Express) 
+- React
+- MongoDB Atlas (+ Mongoose)
+
+## :fork_and_knife: Contributing
+- Fork this repo
+- Create a branch for all your features
+- Commit
+- Push your branch
